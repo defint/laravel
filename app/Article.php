@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+  protected $dates = [
+    'published_at'
+  ];
+
   /**
    * @var array
    */
