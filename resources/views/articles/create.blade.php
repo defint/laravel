@@ -11,6 +11,10 @@
         {!! Form::label('body','Body:') !!}
         {!! Form::textarea('body') !!}
     </div>
+    <div>
+        {!! Form::label('published_at','Publish on:') !!}
+        {!! Form::input('date','published_at',\Carbon\Carbon::now()->format('Y-m-d')) !!}
+    </div>
 
     {!! Form::submit('Create article') !!}
 {!! Form::close() !!}
