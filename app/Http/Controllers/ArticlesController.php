@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Http\Requests\CreateArticleRequest;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -30,7 +31,7 @@ class ArticlesController extends Controller
     return view('articles.show',compact('article'));
   }
 
-  public function store(Request $request)
+  public function store(CreateArticleRequest $request)
   {
     $input = $request->all();
 
