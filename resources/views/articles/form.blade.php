@@ -1,3 +1,5 @@
+{!! Form::hidden('user_id',1) !!}
+
 <div>
     {!! Form::label('title','Title:') !!}
     {!! Form::text('title') !!}
