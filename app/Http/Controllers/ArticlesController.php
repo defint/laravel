@@ -40,9 +40,8 @@ class ArticlesController extends Controller
 
   public function store(ArticleRequest $request)
   {
-    $input = $request->all();
-
-    Article::create($input);
+    $article = new Article($request->all());
+    \Auth::user()->articles()->save($article);
 
     return redirect('articles');
   }
