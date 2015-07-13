@@ -2,7 +2,7 @@
 
 <hr />
 
-{!! Form::open() !!}
+{!! Form::open(['url' => 'articles/']) !!}
     <div>
         {!! Form::label('title','Title:') !!}
         {!! Form::text('title') !!}
