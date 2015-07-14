@@ -12,6 +12,11 @@ use App\Http\Controllers\Controller;
 
 class ArticlesController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth',['only' => 'create']);
+  }
+
   public function create()
   {
     return view('articles.create');
