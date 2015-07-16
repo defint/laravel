@@ -1,5 +1,10 @@
 <?php
 
+Route::get('/',function()
+{
+  return 'Home page';
+});
+
 Route::get('about','PagesController@about');
 
 Route::resource('articles', 'ArticlesController');
