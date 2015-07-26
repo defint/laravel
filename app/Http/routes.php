@@ -2,7 +2,7 @@
 
 Route::get('/',function()
 {
-  return 'Home page';
+  return view('index');
 });
 
 Route::get('about','PagesController@about');
